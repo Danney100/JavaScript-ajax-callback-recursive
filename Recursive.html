@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive</title>
+    <script>
+        function count(x) {
+            if(x==0){
+                document.write('end of function');
+            } else {
+                document.write('x is the value when count function is called:' + x + "<br>");
+                count(x-1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Calling Recursive Function</h2>
+    <script>
+        count(5);
+    </script>
+</body>
+</html>

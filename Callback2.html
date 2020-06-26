@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback2</title>
+    <script>
+        function cmp1(a, b) {
+            return b-a;
+        }
+        function cmp2(a, b) {
+            return a-b;
+        }
+    </script>
+</head>
+<body>
+    <h2>Callback2</h2>
+    <script>
+        var scores=[10,50,23,14,25,34,18,9];
+        document.write('order: ' + scores.sort(cmp1));
+        document.write('<br><br>');
+        document.write('diverse: ' + scores.sort(cmp2));
+    </script>
+</body>
+</html>
